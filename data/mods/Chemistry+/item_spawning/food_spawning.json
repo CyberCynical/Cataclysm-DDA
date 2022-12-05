@@ -1,0 +1,19 @@
+[
+  {
+    "type": "item_group",
+    "id": "softdrinks_canned",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "cola", "prob": 60 },
+      { "item": "colamdew", "prob": 55 },
+      { "item": "creamsoda", "prob": 50 },
+      { "item": "lemonlime", "prob": 50 },
+      { "item": "orangesoda", "prob": 45 },
+      { "item": "rootbeer", "prob": 40 },
+      { "item": "crispycran", "prob": 35 },
+      { "item": "purple_drink", "prob": 35 },
+      { "item": "choc_drink", "prob": 25 },
+      { "item": "pedialyte", "prob": 25 }
+    ]
+  }
+]

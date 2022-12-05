@@ -1,0 +1,24 @@
+[
+  {
+    "result": "blue_pen_ink",
+    "type": "uncraft",
+    "activity_level": "MODERATE_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "30 m",
+    "qualities": [ { "id": "CONTAIN", "level": 1 }, { "id": "SEPARATE", "level": 1 } ],
+    "components": [
+      [ [ "chem_isopropyl_alcohol", 1 ] ] ]
+  },
+  {
+    "result": "black_pen_ink",
+    "type": "uncraft",
+    "activity_level": "MODERATE_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "30 m",
+    "qualities": [ { "id": "CONTAIN", "level": 1 }, { "id": "SEPARATE", "level": 1 } ],
+    "components": [
+      [ [ "chem_isopropyl_alcohol", 1 ] ] ]
+  }
+]

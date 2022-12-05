@@ -1,0 +1,35 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_imp_still",
+    "name": "improvised distillation apparatus",
+    "symbol": "&",
+    "description": "An improvised distillation apparatus, it is neatly setup and ready for use.",
+    "color": "light_cyan",
+    "looks_like": "flask_glass",
+    "move_cost_mod": -1,
+    "coverage": 35,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT", "CONTAINER", "PLACE_ITEM" ],
+    "crafting_pseudo_item": "improvised_still",
+    "deployed_item": "improvised_still",
+    "examine_action": "deployed_furniture",
+    "deconstruct": {
+      "items": [
+        { "item": "pipe", "count":  [ 1, 2 ] },
+        { "item": "glass", "count": [ 1, 2 ] },
+        { "item": "scrap", "count": [ 1, 3 ] }
+      ]
+    },
+    "bash": {
+      "str_min": 8,
+      "str_max": 150,
+      "sound": "crssh!",
+      "sound_fail": "whump!",
+      "items": [
+        { "item": "scrap", "count": [ 1, 2 ], "prob": 50 },
+        { "item": "glass", "count": [ 2, 4 ] }
+      ]
+    }
+  }
+]

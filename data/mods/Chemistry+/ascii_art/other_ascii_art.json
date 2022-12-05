@@ -1,0 +1,65 @@
+[
+  {
+    "type": "ascii_art",
+    "id": "pills",
+    "picture": [
+      "  <color_light_cyan>,.--.</color>",
+      " <color_light_cyan>// \\  \\</color>",
+      " <color_light_cyan>\\   \\ /</color> ",
+      "  <color_light_cyan>`'--'</color>",
+      "       <color_red>,.--.</color>",
+      "      <color_red>// M R\\</color>",
+      "      <color_red>\\  K  /</color> ",
+      "       <color_red>`'--'</color>",
+      "  <color_yellow>,.--.</color>",
+      " <color_yellow>//____\\</color>",
+      " <color_yellow>\\     /</color> ",
+      "  <color_yellow>`'--'</color>",
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "ascii_art",
+    "id": "hazard",
+    "picture": [
+      "<color_red>nunununununnunununununnunununununnununun</color>",
+      "   .-.   ___  ____ _  _ ____ ____ ____  ",
+      "  (X-X)  |  \\ |__| |\\ | | __ |___ |__/",
+      "'=.|m|.='|__/ |  | | \\| |__] |___ |  \\",
+      " .='``=.                                ",
+      "<color_red>nunununununnunununununnunununununnununun</color>",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "ascii_art",
+    "id": "neco",
+    "picture": [
+      "                                   :~7?|",       
+      "...                  ........   ^??!!?Y|",      
+      ".J?77777!~.   ^~!77?77777777777JY^ ~J~ |",     
+      "?Y     .:~7YJJ7~^.            ^P  ^5.  |",     
+      "P!     <color_yellow>NYA</color>??^            <color_yellow>NYA</color>^~.   ..   |",     
+      "P!      75^       JP^       ~B5!:      |",    
+      "?Y     .~        :G^JJ.      ^G7JY7:   |",  
+      ".57   .!!!7!7?!~75:  ~J!7777775#J7?7?7^|",
+      "  JJ~?J!...!<color_red>@@@</color>?7?J:  .G7..  <color_red>:&@&.</color>   :5|",
+      "  JP^     <color_red>5@@@7</color>  ^P^ !P     <color_red>^@@@7</color>    .B|",
+     "  J#       <color_red>?@@@^</color>   7Y .5!:    <color_red>G@@~</color> .::75|",
+     " :BY?:.... <color_red>:&@#</color>^^^!5^   ~!7777J<color_red>##</color>???77~ |",
+     " ?J ^7YP!777YY?!!~^.      ~^ .....     !|",
+     " Y!   .P^      :     ^.   ^G          .G|",
+     " Y!    :5!     J?:  .#5!^^?5         ^5~|",
+     " JJ  ^Y^ ?J:    ^?77?!.~!~~      <color_yellow>NYA</color>7J: |",
+     "  YYJ7!P  ^?77~:....           .:!??~   |", 
+     "  ^.  75.   J@J!!7777J5?!!777?7GPJ~     |",  
+     "     !5~  JYJ!.   ^G?57^... ^P..!J!~: 5J|",       
+     "      .??7P^ ~?7!^P^  ~7?~:7Y:    .~7J7 |",        
+     "             ::    .^~:     .^7!        |" 
+    ]
+  }
+]

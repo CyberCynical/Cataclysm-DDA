@@ -1,0 +1,152 @@
+[
+  {
+    "id": "fd_bromine",
+    "type": "field_type",
+    "legacy_enum_id": 7,
+    "intensity_levels": [
+      { "name": "bromine splatter", "sym": "5", "color": "red", "dangerous": true,
+      "effects": [ { "effect_id": "corroding", "immune_in_vehicle": true, "is_environmental": false } ] },
+
+
+      { "name": "bromine puddle", "sym": "5", "color": "red", "dangerous": true,
+      "effects": [ { "effect_id": "corroding", "immune_in_vehicle": true, "is_environmental": false } ] },
+
+
+      { "name": "pool of bromine", "sym": "5", "color": "red", "dangerous": true,
+      "effects": [ { "effect_id": "corroding", "immune_in_vehicle": true, "is_environmental": false } ] }
+    ],
+    "description_affix": "covered_in",
+    "underwater_age_speedup": "2 minutes",
+    "has_acid": true,
+    "priority": 2,
+    "half_life": "5 minutes",
+    "phase": "liquid",
+    "display_field": true,
+    "looks_like": "fd_bile"
+  },
+  {
+    "id": "emit_bromine",
+    "type": "emit",
+    "field": "fd_bromine",
+    "intensity": 3,
+    "chance": 50
+  },
+  {
+    "id": "fd_acid_vapor",
+    "type": "field_type",
+    "legacy_enum_id": 12,
+    "intensity_levels": [
+      {
+        "name": "acid vapor",
+        "sym": "8",
+        "dangerous": true,
+        "translucency": 1,
+        "effects": [
+          {
+            "effect_id": "smoke",
+            "body_part": "mouth",
+            "intensity": 1,
+            "min_duration": "5  seconds",
+            "max_duration": "5 seconds",
+            "immune_inside_vehicle": true
+          }
+        ]
+      },
+      {
+        "name": "acid mist",
+        "color": "light_gray",
+        "transparent": false,
+        "translucency": 10,
+        "effects": [
+          {
+            "effect_id": "corroding",
+            "body_part": "mouth",
+            "intensity": 2,
+            "min_duration": "1 minutes",
+            "max_duration": "1 minutes",
+            "immune_inside_vehicle": true
+          }
+        ],
+        "scent_neutralization": 1
+      },
+      {
+        "name": "cloud of acid vapor",
+        "color": "dark_gray",
+        "translucency": 0,
+        "effects": [
+          {
+            "effect_id": "corroding",
+            "body_part": "mouth",
+            "intensity": 4,
+            "min_duration": "2 minutes",
+            "max_duration": "2 minutes",
+            "immune_inside_vehicle": true
+          }
+        ],
+        "scent_neutralization": 5
+      }
+    ],
+    "decay_amount_factor": 5,
+    "gas_absorption_factor": 12,
+    "dirty_transparency_cache": true,
+    "percent_spread": 10,
+    "outdoor_age_speedup": "0 turns",
+    "priority": 8,
+    "half_life": "2 minutes",
+    "phase": "gas",
+    "accelerated_decay": true,
+    "display_items": false,
+    "display_field": true,
+    "looks_like": "fd_fog"
+  },
+  {
+    "id": "emit_acid_vapor",
+    "type": "emit",
+    "field": "fd_acid_vapor",
+    "intensity": 3,
+    "chance": 50
+  },
+  {
+    "id": "fd_sarin",
+    "type": "field_type",
+    "legacy_enum_id": 12,
+    "intensity_levels": [
+      {
+        "name": "sarin vapor",
+        "sym": "8",
+        "color": "blue",
+        "dangerous": true,
+        "translucency": 1,
+        "effects": [
+          {
+            "effect_id": "sarin_effect",
+            "body_part": "mouth",
+            "intensity": 1,
+            "min_duration": "2 minutes",
+            "max_duration": "2 minutes",
+            "immune_inside_vehicle": true
+          }
+        ]
+      }
+    ],
+    "decay_amount_factor": 5,
+    "gas_absorption_factor": 12,
+    "dirty_transparency_cache": true,
+    "percent_spread": 10,
+    "outdoor_age_speedup": "0 turns",
+    "priority": 8,
+    "half_life": "2 minutes",
+    "phase": "gas",
+    "accelerated_decay": true,
+    "display_items": false,
+    "display_field": true,
+    "looks_like": "fd_fog"
+  },
+  {
+    "id": "emit_sarin",
+    "type": "emit",
+    "field": "fd_sarin",
+    "intensity": 1,
+    "chance": 50
+  }
+]

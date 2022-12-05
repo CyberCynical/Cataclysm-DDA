@@ -1,0 +1,12 @@
+[
+  {
+    "id": "non-polar_solvents",
+    "type": "requirement",
+    "components": [ [ [ "chem_chloroform", 2 ], ["chem_toluene", 2 ], ["chem_benzene", 2 ], ["ether", 2 ] ] ]
+  },
+  {
+    "id": "polar_solvents",
+    "type": "requirement",
+    "components": [ [ [ "chem_DMSO", 2 ], ["chem_acetone", 2 ], ["chem_methanol", 2 ], ["chem_DCM", 2 ] ] ]
+  }
+]

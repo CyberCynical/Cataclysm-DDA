@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "chem_mod",
+    "name": "Chemistry+",
+    "authors": [ "CyberCynical" ],
+    "maintainers": [ "CyberCynical" ],
+    "description": "Adds more chemicals, drugs, and recipes for chemistry.",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]

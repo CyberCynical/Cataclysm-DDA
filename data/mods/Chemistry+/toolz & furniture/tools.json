@@ -1,0 +1,96 @@
+[
+  {
+    "id": "improvised_still",
+    "type": "TOOL",
+    "category": "tools",
+    "name": { "str": "improvised distillation apparatus" },
+    "description": "A improvised distillation apparatus crudely fashioned from household items.",
+    "weight": "1000 g",
+    "volume": "5000ml",
+    "price": 2,
+    "price_postapoc": 1000,
+    "to_hit": -5,
+    "bashing": 2,
+    "material": [ "glass" ],
+    "looks_like": "glass_tube_small",
+    "symbol": "&",
+    "color": "light_blue",
+    "qualities": [ [ "DISTILL", 1 ], [ "CONTAIN", 1 ], [ "BOIL", 1 ] ],
+    "use_action": { "type": "deploy_furn", "furn_type": "f_imp_still" }
+  },
+  {
+    "id": "5L_flask",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "5L boiling flask" },
+    "looks_like": "flask_glass",
+    "description": "A 5000ml flat bottom boiling flask with a joint size of 24/29. You could make alotta drugs in this bad boy.",
+    "weight": "386 g",
+    "volume": "5503 ml",
+    "longest_side": "72 mm",
+    "price": 1500,
+    "price_postapoc": 20,
+    "to_hit": -1,
+    "material": [ "glass" ],
+    "symbol": ")",
+    "color": "light_cyan",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": true,
+        "watertight": true,
+        "open_container": true,
+        "max_contains_volume": "5500 ml",
+        "max_item_volume": "32 ml",
+        "max_contains_weight": "20 kg"
+      }
+    ],
+    "qualities": [ [ "BOIL", 1 ], [ "CONTAIN", 2 ], [ "CHEM", 2 ] ]
+  },
+  {
+    "id": "imp_sep_funnel",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "improvised separatory funnel" },
+    "looks_like": "flask_glass",
+    "description": "A improvised separatory funnel.",
+    "weight": "386 g",
+    "volume": "503 ml",
+    "longest_side": "72 mm",
+    "price": 1500,
+    "price_postapoc": 20,
+    "to_hit": -1,
+    "material": [ "plastic" ],
+    "symbol": ")",
+    "color": "light_cyan",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "rigid": true,
+        "watertight": true,
+        "open_container": true,
+        "max_contains_volume": "500 ml",
+        "max_item_volume": "32 ml",
+        "max_contains_weight": "3 kg"
+      }
+    ],
+    "qualities": [ [ "CONTAIN", 1 ], [ "EXTRACT", 1 ], [ "SEPARATE", 1 ] ]
+  },
+  {
+    "id": "filter_paper",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": { "str": "filter paper" },
+    "description": "Semi-permeable paper used to separate solid particles from liquids.",
+    "weight": "50 g",
+    "volume": "500 ml",
+    "price": 300,
+    "price_postapoc": 10,
+    "bashing": 1,
+    "material": [ "paper" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "qualities": [ [ "FILTER", 1 ] ],
+    "flags": [ "UNRECOVERABLE" ]
+  }
+  ]

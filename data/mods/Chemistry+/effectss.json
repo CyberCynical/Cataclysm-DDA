@@ -1,0 +1,183 @@
+[
+  {
+    "type": "effect_type",
+    "id": "GHB",
+    "name": [ "High on GHB" ],
+    "desc": [ "You feel disinhibited and relaxed." ],
+    "miss_messages": [ [ "You feel dizzy.", 2 ], [ "For a moment you forget what you were doing.", 2 ] ],
+    "rating": "good",
+    "int_dur_factor": "100 m",
+    "max_intensity": 1,
+    "base_mods": {"sleep_chance": [ 501 ], "vomit_chance": [ 450 ], "per_mod": [ 1 ], "int_mod": [ -1 ], "dex_mod": [ -1 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "CN_poison",
+    "name": [ "Cyanide poisoning" ],
+    "desc": [ "You have been poisoned!" ],
+    "miss_messages": [ [ "You feel awful.", 1 ], ["You are sweating profusely.", 1 ] ],
+    "rating": "bad",
+    "resist_traits": [ "POISRESIST" ],
+    "pain_sizing": true,
+    "hurt_sizing": true,
+    "main_parts_only": true,
+    "base_mods": {
+      "dex_mod": [ -1, -1 ],
+      "str_mod": [ -1, 0 ],
+      "pain_min": [ 1 ],
+      "pain_chance": [ 150, 200 ],
+      "hurt_min": [ 5 ],
+      "hurt_chance": [ 10, 20 ],
+      "vomit_chance": [ 450 ]
+    },
+    "show_in_info": true,
+    "blood_analysis_description": "Poison"
+  },
+  {
+    "type": "effect_type",
+    "id": "cure_CN",
+    "removes_effects": [
+      "CN_poison"
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "brain_cancer",
+    "name": [ "Brain damage" ],
+    "desc": [ "Something is wrong with your brain..." ],
+    "apply_message": "Your head is pounding.",
+    "remove_message": "The brain fog lifts and you feel rejuvenated.",
+    "rating": "bad",
+    "base_mods": { "dex_mod": [ -1 ], "int_mod": [ -3 ], "per_mod": [ -1 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "black_out",
+    "apply_message": "You black out.",
+    "rating": "bad",
+    "base_mods": {
+    "sleep_chance": [ 10 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "ludes",
+    "name": [ "Luding out" ],
+    "desc": [ "The world slows down and you feel at ease." ],
+    "miss_messages": [ [ "You are luding out.", 2 ], ["You smile and giggle uncontrollably.", 2 ] ],
+    "rating": "good",
+    "max_intensity": 1,
+    "base_mods": {"sleep_chance": [ 400 ], "per_mod": [ 1 ], "dex_mod": [ -1 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "high on BZP",
+    "name": [ "High on BZP" ],
+    "desc": [ "You feel amped up like you could run a mile!" ],
+    "miss_messages": [ [ "You are sweating profusely.", 2 ], [ "You feel a bit queasy.", 2 ], [ "The thought of taking more BZP crosses your mind.", 3 ] ],
+    "base_mods": { 
+    "int_mod": [ -1 ], 
+    "per_mod": [ 2 ], 
+    "dex_mod": [ 1 ],
+    "str_mod": [ 1 ],
+    "vomit_chance": [ 350 ],
+    "speed_mod": [ 20 ],
+    "stamina_min": [ 25 ],
+    "fatigue_min": [ 1 ],
+    "fatigue_tick": [ 9 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "modafinil_effect",
+    "name": [ "Modafinil" ],
+    "desc": [ "You feel energized and focused." ],
+    "miss_messages": [ [ "The thought of taking more modafinil crosses your mind.", 2 ] ],
+    "base_mods": { 
+    "per_mod": [ 1 ],
+    "dex_mod": [ 1 ], 
+    "speed_mod": [ 8 ],
+    "stamina_min": [ 10 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "2-FA_effect",
+    "name": [ "High on fluoroamphetamines" ],
+    "desc": [ "You cant help but grind your teeth with the amount of energy you have!" ],
+    "apply_message": "You feel your senses sharpen and a wave of euphoria washes over you!",
+    "miss_messages": [ [ "You are sweating profusely.", 2 ], [ "Your muscles twitch uncontrollably.", 4 ], [ "Your heart is pounding.", 4 ] ],
+    "base_mods": { 
+    "int_mod": [ 1 ], 
+    "per_mod": [ 3 ], 
+    "dex_mod": [ -1 ],
+    "str_mod": [ 2 ],
+    "speed_mod": [ 30 ],
+    "stamina_min": [ 30 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "PCP_effect",
+    "name": [ "High on PCP" ],
+    "desc": [ "You feel disconnected from your own thoughts." ],
+    "apply_message": "Your body goes completely numb.",
+    "miss_messages": [ [ "Your vision goes blurry.", 1 ], [ "Everything is so numb.", 2 ], [ "You pick at your skin.", 3 ] ],
+    "base_mods": { 
+    "int_mod": [ -2 ], 
+    "per_mod": [ -1 ],
+    "dex_mod": [ -1 ],
+    "str_mod": [ 4 ],
+    "speed_mod": [ 20 ],
+    "stamina_min": [ 35 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "thalidomide_effect",
+    "base_mods": { "vomit_chance": [ -100 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "MDMA_effect",
+    "name": [ "High on MDMA" ],
+    "desc": [ "You feel warm and content." ],
+    "apply_message": "A wave of euphoria washes over you.",
+    "miss_messages": [ [ "You are sweating profusely.", 2 ] ],
+    "base_mods": { 
+    "per_mod": [ 2 ], 
+    "dex_mod": [ 2 ],
+    "int_mod": [ 1 ], 
+    "speed_mod": [ 20 ],
+    "stamina_min": [ 20 ] }
+  },
+  {
+    "type": "effect_type",
+    "id": "sarin_effect",
+    "name": [ "Sarin exposure" ],
+    "desc": [ "You have been poisoned!" ],
+    "miss_messages": [ [ "Your vision goes blurry.", 1 ], ["You piss yourself.", 3 ] ],
+    "rating": "bad",
+    "resist_traits": [ "POISRESIST" ],
+    "pain_sizing": true,
+    "hurt_sizing": true,
+    "main_parts_only": true,
+    "base_mods": {
+      "dex_mod": [ -10 ],
+      "per_mod": [ -5 ], 
+      "str_mod": [ -10 ],
+      "pain_min": [ 5 ],
+      "pain_chance": [ 150, 200 ],
+      "hurt_min": [ 15 ],
+      "hurt_chance": [ 10, 20 ],
+      "vomit_chance": [ 650 ]
+    },
+    "show_in_info": true,
+    "blood_analysis_description": "Poison"
+  },
+  {
+    "type": "effect_type",
+    "id": "atropine_effect",
+    "name": [ "Atropine" ],
+    "base_mods": {
+      "per_mod": [ -1 ] },
+    "removes_effects": [
+      "sarin_effect"
+    ]
+  }
+]
